@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-style: normal;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-style: normal;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #6a6877;
+    background: linear-gradient(to right, #111111, #1d1b2a, #3c2f58) !important;
+    animation: animatedGradient 20s ease infinite;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+/* Override navbar background just for this page */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.75rem 2rem;
+    /* You can reduce or remove side padding if needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* PARTICLES ANIMATIN */
+.form-wrapper {
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+
+}
+
+.form-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ffcc00;
+    text-align: center;
+  }
+
+
+.form-box {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 3rem 3rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .form-box:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Subtle entrance animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 1rem 1rem 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.input-container input:focus {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.input-container label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #d1cfe8;
+    font-size: 0.95rem;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.input-container input:focus+label,
+.input-container input:valid+label {
+    top: 0.4rem;
+    left: 1rem;
+    font-size: 0.75rem;
+    color: #ffe284;
+}
+
+.btn {
+    background: #ffe284;
+    border: none;
+    border-radius: 10px;
+    padding: 0.9rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffd44c;
+}
+
+.divider {
+    margin: 2rem 0;
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.contact-info a {
+    color: #ffe284;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s ease;
+    filter: brightness(1.2);
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+    .form-box {
+        padding: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.95rem;
+    }
+
+    .contact-info p {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+
+
+/* FOOOTOER */
+
+
+.footer {
+    background: #f3f0ff;
+    /* Light purple background */
+    color: #3b3663;
+    /* Deep purple color for text */
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+    color: #6c5c7b;
+    margin: 0.5rem 0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+.footer-contact p {
+    font-size: 1rem;
+    color: #6c5c7b;
+    margin: 0.5rem 0;
+}

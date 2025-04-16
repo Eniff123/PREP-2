@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-style: normal;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-style: normal;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #6a6877;
+    animation: animatedGradient 20s ease infinite;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+/* Override navbar background just for this page */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.75rem 2rem;
+    /* You can reduce or remove side padding if needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.068);
+    padding: 3rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    max-width: 400px;
+    width: 100%;
+    color:cadetblue;
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .login-box label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .login-box button {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-box button:hover {
+    background: #ffe366;
+  }
+  
+  .redirect {
+    display: flex;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .redirect a {
+
+    text-decoration: none;
+    color: #ffcc00;
+    text-align: center;
+  }
+
+
+  .floating-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background: linear-gradient(120deg, #1a1a2e, #2e2542);
+  }
+  
+  .floating-background span {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 204, 0, 0.2);
+    border-radius: 50%;
+    animation: float 10s linear infinite;
+  }
+  
+  .floating-background span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+  }
+  .floating-background span:nth-child(2) {
+    left: 40%;
+    animation-delay: 3s;
+    background: rgba(106, 90, 205, 0.3);
+  }
+  .floating-background span:nth-child(3) {
+    left: 70%;
+    animation-delay: 6s;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .floating-background span:nth-child(4) {
+    left: 90%;
+    animation-delay: 9s;
+    background: rgba(255, 204, 0, 0.3);
+  }
+
+  .floating-background span:nth-child(5) {
+    left: 10%;
+    animation-delay: 0s;
+  }
+  .floating-background span:nth-child(6) {
+    left: 40%;
+    animation-delay: 3s;
+    background: rgba(106, 90, 205, 0.3);
+  }
+  .floating-background span:nth-child(7) {
+    left: 70%;
+    animation-delay: 6s;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .floating-background span:nth-child(8) {
+    left: 90%;
+    animation-delay: 9s;
+    background: rgba(255, 204, 0, 0.3);
+  }
+  
+  @keyframes float {
+    0% {
+      top: 100%;
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      top: -10%;
+      transform: translateY(-100vh) scale(1.5);
+    }
+  }
+  

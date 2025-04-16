@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo" id="burgerMenu">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+        </div>
+        <img src="../Prepcies.png" id="logo" alt="Logo">
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="login-icon" title="Log In">
+                    <i class="fas fa-user-circle">Log In</i>
+                </a></li>
+        </ul>
+    </nav>
+
+    <div class="form-wrapper">
+        <div class="form-box">
+            <h2>Register</h2>
+            <form class="register-form" onsubmit="return validateForm()">
+                <div class="input-container">
+                    <input type="text" id="name" required>
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="input-container">
+                    <input type="email" id="email" required>
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+
+            <hr class="divider">
+
+            <h2>Contact Info</h2>
+            <div class="contact-info">
+                <p>📧 <a href="mailto:hello@example.com">hello@example.com</a></p>
+                <p>📍 Tbilisi, Georgia</p>
+                <p>🌐 <a href="#">yourdomain.com</a></p>
+                <div class="social-icons">
+                    <a href="#"><img src="icons/twitter.svg" alt="Twitter" /></a>
+                    <a href="#"><img src="icons/github.svg" alt="GitHub" /></a>
+                    <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
